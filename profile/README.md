@@ -77,29 +77,6 @@ graph LR
 
 ---
 
-## ⚙️ 빠른 시작 (로컬)
-
-> **Docker Compose** 파일은 `orderhub-cloud/local-compose.yaml` 에 있습니다.
-
-```bash
-git clone https://github.com/order-hub/orderhub-cloud.git
-cd orderhub-cloud
-
-# 인프라 (DB + Kafka + MinIO) 기동
-docker compose -f local-compose.yaml up -d infra
-
-# 마이크로서비스 빌드 & 기동
-docker compose -f local-compose.yaml up -d product-ms store-ms auth-ms scheduler-ms
-
-# 프론트엔드
-cd ../orderhub-front
-npm ci && npm run dev   # <http://localhost:3000>
-```
-
-각 서비스는 80xx 번 포트를 기본 사용합니다 (`8001` product, `8002` store …).
-
----
-
 ## 🔐 인증 흐름
 
 1. **로그인** – Auth MS가 JWT(Access + Refresh)를 발급 → 쿠키 저장.

@@ -17,7 +17,7 @@
 | Repo                       | 주 언어                   | 간단 설명                                          |
 | -------------------------- | ---------------------- | ---------------------------------------------- |
 | **orderhub-front**         | JavaScript (React)     | B2B·관리자용 SPA. API Gateway ↔️ Microservices 연동  |
-| **auth-microservice**      | Java (Spring Security) | OAuth2 / JWT 인증, 토큰 재발급, RBAC                  |
+| **auth-microservice**      | Java (Spring Security) | JWT 인증, 토큰 재발급, RBAC                  |
 | **product-microservice**   | Java (Spring Boot)     | 상품, 카테고리, 할인, 주문 API & Kafka 이벤트               |
 | **store-microservice**     | Kotlin (Spring Boot)   | 매장, 인벤토리, 재고 관리 & ‘product‑updated’ 리스너        |
 | **scheduler-microservice** | Java (Spring Batch)    | 정기 주문 처리, Outbox 패턴, 배치 + Kafka 퍼블리셔           |

@@ -120,7 +120,7 @@ npm ci && npm run dev   # <http://localhost:3000>
 
 ---
 
-## 📈 로드맵
+## 📈 추후 개선 로드맵
 
 * [ ] **API Gateway**: Spring Cloud Gateway → Envoy 전환 검토
 * [ ] **Event Sourcing**: 주문 흐름 CQRS 적용
